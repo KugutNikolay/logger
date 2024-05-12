@@ -3,6 +3,8 @@
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
+$logger = require __DIR__ . '/../components/logger/config/logger.php';
+
 $config = [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
@@ -26,6 +28,7 @@ $config = [
             ],
         ],
         'db' => $db,
+        'logger' => $logger,
     ],
     'params' => $params,
     /*
